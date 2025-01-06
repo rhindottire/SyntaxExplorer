@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /*
+    transition : [property] <durasi> [fungsi] [delay]
+      [] = optional property
+      durasi = wajib (s, ms)
+    */
+    .container {
+      width: 900px;
+      margin: 10px auto;
+      border: 5px solid black;
+    }
+    .kotak {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: margin-left 3s 1s, border-radius 4s, background-color 500ms 3s;
+    }
+    .container:hover .kotak {
+      transform: rotate(360deg);
+      margin-left: 800px;
+      border-radius: 50%;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="kotak"></div>
+  </div>
+</body>
+</html>

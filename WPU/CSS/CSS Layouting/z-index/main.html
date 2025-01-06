@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- semakin besar z-index semakin kedepan
+  sumbu x adalah horizontal
+  sumbu y adalah vertikal
+  sumbu z 3D -->
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+    }
+    .satu {
+      background-color: red;
+      z-index: 9999;
+    }
+    .dua {
+      background-color: blue;
+      top: 100px;
+      left: 100px;
+      z-index: 0;
+    }
+    .tiga {
+      background-color: green;
+      top: 200px;
+      left: 200px;
+      z-index: -9999;
+    }
+  </style>
+</head>
+<body>
+  <div class="satu"></div>
+  <div class="dua"></div>
+  <div class="tiga"></div>
+</body>
+</html>

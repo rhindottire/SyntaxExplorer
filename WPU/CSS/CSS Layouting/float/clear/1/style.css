@@ -1,0 +1,18 @@
+/* clear adalah property yang memberikan efek clear pada float */
+
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    /* overflow: auto; bukan cara yang tepat */ 
+}
+
+img {
+    float: left;
+    margin: 5px;
+}
+
+.clear {
+    clear: left;
+}

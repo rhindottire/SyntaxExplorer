@@ -1,0 +1,36 @@
+/* p { color: red; }
+p { color: blue; } */
+/* p blue menimpa p red */
+
+#p1 { color: red; }
+p { color: blue; }
+/* #p1 = 0,100 > p = 0,001 */
+
+/* inline , id , class , element
+inline = 1000
+id = 100
+class = 10
+element = 1
+0 , 0 , 0 , 0 === value */
+
+/* 2 element html (ul & li)
+1 id (makanan)
+2 = 100 = 0,102 value */
+ul#makanan li {
+    color: green;
+}
+/* 1 class (favorite)
+10 = 0,010 value*/
+/* .favorite {
+    color: blue;
+} */
+
+/* 2 element html (ul & li)
+1 class (favorite)
+1 id (makanan)
+2 + 10 + 100 = 0,112 value */
+ul#makanan li.favorite {
+    color: blue;
+}
+
+/* https://specificity.keegan.st/ */

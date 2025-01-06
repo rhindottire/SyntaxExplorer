@@ -1,0 +1,34 @@
+.container {
+  width: 800px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+}
+
+/* harus memiliki width dan height yang sama supaya tidak collapse */
+.kiri {
+  width: 150px;
+  height: 500px;
+  background-color: salmon;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tengah {
+  width: 500px;
+  height: 500px;
+  background-color: lightskyblue;
+  float: left;
+}
+
+.kanan {
+  width: 150px;
+  height: 500px;
+  background-color: lightgreen;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}

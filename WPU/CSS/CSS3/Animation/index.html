@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .kotak {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /* shorthand */
+      animation: example 5s ease infinite alternate forwards running;
+      /* animation-name: example;
+      animation-duration: 5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      animation-play-state: paused; */
+    }
+
+    /* .kotak:hover {
+      animation: example 5s ease;
+    } */
+
+    /* @keyframes example {
+      from {
+        width: 200px;
+      }
+      to {
+        width: 500px;
+      } */
+
+    @keyframes example {
+      0% {
+        width: 200px;
+      }
+      50% {
+        width: 300px;
+        background-color: yellow;
+      }
+      100% {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="kotak"></div>
+</body>
+</html>

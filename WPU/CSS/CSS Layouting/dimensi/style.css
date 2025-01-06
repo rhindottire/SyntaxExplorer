@@ -1,0 +1,35 @@
+/* dimensi */
+.satu {
+    /* satuan width & height
+    px, %, in, cm, mm, pt, pc
+    px = absolute
+    % = relative */
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.dua {
+    width: 125%;
+    background-color: red;
+}
+
+.tiga {
+    width: 250px;
+    height: 200px;
+    background-color: blueviolet;
+    overflow: auto;
+}
+
+/* overflow
+visible = default
+auto = scroll
+hidden = content yg keluar dri parent di sembunyikan
+scroll = scroll */
+
+.empat {
+    width: 50px;
+    height: 75px;
+    background-color: yellow;
+    overflow: hidden;
+}

@@ -1,0 +1,75 @@
+/* pseudo-class selectors */
+/* :link === style default pada link (a yg memiliki href)
+:hover === ketika mouse diarahkan ke link
+:active === ketika link aktif
+:visited === link yang dikunjungi */
+
+.hello:link {
+    color: red;
+}
+
+.hello:hover {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.hello:active {
+    color: black;
+    font-style: italic;
+}
+
+.hello:visited {
+    color: brown;
+}
+
+/* pseudo-class element position
+:first-child === pertama
+:last-child === terakhir
+:nth-child(n) === element ke-n (even === genap, odd === ganjil)
+:first-of-type === element pertama tipe tag
+:last-of-type === element terakhir tipe tag */
+
+/* li:first-child a {
+    color: black;
+}
+
+li:last-child a {
+    color: cyan;
+}
+
+li:nth-child(2) a {
+    color: red;
+} */
+
+/* 2n ===kelipatan 2
+li:nth-child(2n) a {
+    color: red;
+}
+
+3n === kelipatan 3 mulai dari 1
+li:nth-child(3n-2) a {
+    color: red;
+}
+or
+li:nth-child(3n+1) a {
+    color: red;
+} */
+
+/* even/odd === genap/ganjil */
+li:nth-child(even) a {
+    color: red;
+}
+
+li:nth-child(odd) a:hover {
+    font-size: 30px;
+    color: green;
+}
+
+p:first-of-type {
+    color: red;
+}
+
+p:last-of-type {
+    color: blue;
+}

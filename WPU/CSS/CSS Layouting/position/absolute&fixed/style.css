@@ -1,0 +1,43 @@
+/* https://www.tinkercad.com/things */
+
+/* static adalah default position
+relative adalah element maju 1 dimensi atau keluar dari flow
+absolute = relative terhadap parent selama parentnya non-static
+fixed = relative terhadap browser atau windows
+*/
+
+body {
+  height: 2000px;
+}
+div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.satu {
+  background-color: red;
+}
+
+.dua {
+  background-color: blue;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  top: 0px
+}
+
+.tiga {
+  background-color: green;
+  position: absolute;
+  right: 0px;
+  bottom: 0px
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  border: 10px solid black;
+  position: relative;
+}

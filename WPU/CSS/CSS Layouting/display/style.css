@@ -1,0 +1,53 @@
+/* property default div & span
+
+value display (inline, block, inline-block, none)
+
+element inline = b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea
+element block = h1-h6, p, ol, ul, li, form, hr, div
+
+div {
+    display: block;
+}
+span {
+    display: inline;
+} */
+
+.navigasi {
+    background-color: pink;
+}
+
+.main {
+    width: 1000px;
+    background-color: lightblue;
+}
+
+.main h2 {
+    background-color: lightcoral;
+}
+.main span {
+    background-color: red;
+}
+
+a {
+    background-color: yellow;
+    /* tidak bisa mengatur L/T content element inline */
+    width: 150px;
+    height: 150px;
+    /* gunakan inline-block untuk mengatur L/T content */
+    display: inline-block;
+}
+
+img {
+    width: 750px;
+    height: 600px;
+    /* menghilangkan display */
+    /* display: none; */
+}
+
+.navigasi li {
+    display: inline;
+    background-color: white;
+}
+h1, h1, p {
+    background-color: lightgreen;
+}

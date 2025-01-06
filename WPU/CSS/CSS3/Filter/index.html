@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    /* Filter :
+      blur (px)
+      brightness (angka | %)
+      contrast (angka | %)
+      saturate (angka | %)
+      grayscale (angka | %)
+      sepia (angka | %)
+      hue-rotate (deg)
+      invert (angka | %)
+      opacity (angka | %)
+      drop-shadow (x-offset y-offset blur color)
+      drop-shadow (x-offset y-offset blur spread color)
+    */
+
+    img {
+      -webkit-filter: blur(5px);
+      filter: blur(5px) grayscale(100%) opacity(0.5);
+      /* -webkit-filter: opacity(0.5);
+      filter: opacity(0.5); */
+      /* opacity: 0.5; */
+      /*
+        menggunakan filter operasi math yang dilakukan dengan CSS,
+        akan di bantu dengan hardware PC (bukan browser) = hardware acceleration.
+        GPU menggunakan operasi math yang lebih cepat.
+        GPU = Graphics Processing Unit.
+        FGA CARD = Filter Graphics Acceleration Card.
+        benefits menggunakan filter : 
+          1. lebih cepat
+        kekurangan menggunakan filter : 
+          1. kemungkinan ada browser yang tidak support
+      */
+      /* drop-shadow bisa di implementasikan ke box-shadow dan text-shadow */
+      transition: 1s;
+    }
+
+    img:hover {
+      -webkit-filter: blur(0px);
+      filter: blur(0px) grayscale(0%) opacity(1);
+      transition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://github.khronos.org/siggraph2012course/CanvasCSSAndWebGL/demos/CSS_Filters.html">
+    <img src="m&m.jpg" alt="a">
+  </a>
+</body>
+</html>

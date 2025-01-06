@@ -1,0 +1,67 @@
+/* div {
+    display: inline-block;
+} */
+
+/* shorthand margin {
+    margin: 10px auto 10px;
+    searah jarum jam
+    1 value => top, right, bottom, left
+    2 value => top & bottom, left & right
+    3 value => top, right & bottom, left
+    4 value => top, right, bottom, left
+} */
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 20px; /* inspect => computed */
+}
+
+/* overlapping margin */
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 30px;
+    /* margin horizontal menjumlahkan margin left & right */
+    margin-top: 50px;
+    /* margin tidak saling menambahkan (1 bottom & 2 top)
+    margin vertical mengambil margin terbesar */
+}
+
+/* negatif margin */
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    margin-left: -30px;
+    margin-top: -50px;
+}
+
+.empat {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lima {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enam {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

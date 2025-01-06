@@ -1,0 +1,54 @@
+/* selectors (element html, id, class, complex selector) */
+
+body {
+    font-family: Arial;
+}
+
+/* h1 {
+    color: red;
+}
+
+h2 {
+    color: red;
+} */
+
+/* seperator/grouping/property yang sama */
+h1, h2 {
+    color: blue;
+}
+
+h2 {
+    font-style: italic;
+}
+
+/* more specific */
+ul li a {
+    color: green;
+}
+
+ol li a {
+    color: red;
+}
+
+/* id = #id
+tidak bisa menggunakan 2 id yg sama
+for javascript
+not recommended to css */
+#p1 {
+    color: blueviolet;
+}
+
+/* class = .class */
+.p2 {
+    color: brown;
+}
+
+/* for a href (creator) & p2 == same class */
+.cetak-tebal {
+    font-weight: bold;
+}
+
+/* looking for paragraph with class cetak-tebal */
+p.cetak-tebal {
+    font-size: 30px;
+}

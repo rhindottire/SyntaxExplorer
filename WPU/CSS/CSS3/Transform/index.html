@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .kotak {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin: 50px auto 0;
+      transition: 1s;
+    }
+
+    .kotak:hover {
+      transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+    }
+    /* 
+      transform
+      X = horizontal
+      Y = vertical
+        Scale => ukuran
+        Rotate => rotasi
+        Skew => miring
+        Translate => posisi
+        scale(angka) | scaleX(angka) | scaleY(angka)
+        rotate(angka) | rotateX(angka) | rotateY(angka) | rotateZ(angka)
+        skew(x, y) | skewX(x) | skewY(y)
+        translate(x, y) | translateX(x) | translateY(y)
+    */
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="kotak"></div>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sit unde quisquam quibusdam eum corrupti esse? Consequuntur voluptates tenetur quos.</p>
+</body>
+</html>

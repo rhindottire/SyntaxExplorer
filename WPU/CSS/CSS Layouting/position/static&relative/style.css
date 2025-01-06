@@ -1,0 +1,24 @@
+/* https://www.tinkercad.com/things */
+
+/* static adalah default position
+relative adalah element maju 1 dimensi atau keluar dari flow */
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.satu {
+  background-color: red;
+}
+
+.dua {
+  background-color: blue;
+  position: relative;
+  left: 50px;
+  top: 50px
+}
+
+.tiga {
+  background-color: green;
+}

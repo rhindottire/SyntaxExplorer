@@ -1,0 +1,75 @@
+/* block comment in CSS */
+
+/* font styling & background */
+body {
+      font-family: Arial, Verdana, sans-serif;
+      /* jenis font */
+      font-size: 16px;
+      /* ukuran font (px, %, em)*/
+      font-weight: normal;
+      /* ketebalan font (lighter, normal, bold, bolder, 100-900) */
+      font-variant: normal;
+      /* font to small caps (normal, small-caps) */
+      font-style: normal;
+      /* font cetak miring (normal, oblique, italic) */
+      line-height: normal;
+      /* spasi antar baris (normal, px, em) */
+      
+      /* background */
+      background-color: rgb(32, 178, 170);
+      /* warna background */ 
+      /* nama warna = red, lightseagreen, royalblue */
+      /* hexademical = #ff0000, #20b2aa, #4169e1 */
+      /* rgb = rgb(255, 0, 0), rgb(32, 178, 170), rgb(65, 105, 225) */
+      background-image: url("img/fancy-cushion.png");
+      /* gambar pada background [url ("gambar.jpg")] */
+      background-position: top left;
+      /* posisi gambar pada background (top, bottom, left, right, x%, y%, x-position, y-position) */
+      background-repeat: no-repeat;
+      /* pengulangan background (repeat-x, repeat-y, no-repeat)*/
+}
+
+h2 {
+      /* font-style: italic; ( Optional )
+      font-variant: normal; ( Optional )
+      font-weight: bold; ( Optional )
+      font-size: 16px; ( WAJIB )
+      line-height: 18px; ( Optional )
+      font-family: Helvetica, Arial, sans-serif; ( WAJIB ) */
+      font: italic normal bold 16px/18px helvetica, arial, sans-serif;
+      /* shorthand */
+
+      /* shorthand */
+      background: red url(img/moroccan-flower-dark.png) top left no-repeat;
+      /* background-color: red;
+      background-image: url(img/moroccan-flower-dark.png);
+      background-position: top left;
+      background-repeat: no-repeat; */
+}
+
+/* text styling */
+p {
+      font-size: 15px;
+      color: khaki;
+      /* warna pada teks */
+      /* nama warna = red, lightseagreen, royalblue */
+      /* hexademical = #ff0000, #20b2aa, #4169e1 */
+      /* rgb = rgb(255, 0, 0), rgb(32, 178, 170), rgb(65, 105, 225) */
+      text-align: center;
+      /* format teks (left, right, center, justify) */
+      text-indent: 50px;
+      /* indentasi teks (px, %)*/
+      text-decoration: underline;
+      /* dekorasi teks (none, underline, overline, line-through) */
+      text-transform: uppercase;
+      /* jenis huruf (none, lowercase, uppercase, capitalize) */
+      letter-spacing: 5px;
+      /* spasi antar huruf (normal, px) */
+      word-spacing: 10px;
+      /* spasi antar kata (normal, px) */
+}
+
+a {
+      text-decoration: none;
+      /* menghilangkan garis bawah pada link */
+}
