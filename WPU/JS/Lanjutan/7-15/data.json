@@ -1,0 +1,57 @@
+[
+  {
+    "nama": "Andi Saputra",
+    "nim": "12345678",
+    "jurusan": "Teknik Informatika",
+    "semester": 3,
+    "ipk": 3.75,
+    "kontak": {
+      "email": "andi.saputra@example.com",
+      "telepon": "081234567890"
+    }
+  },
+  {
+    "nama": "Budi Santoso",
+    "nim": "87654321",
+    "jurusan": "Teknik Elektro",
+    "semester": 5,
+    "ipk": 3.45,
+    "kontak": {
+      "email": "budi.santoso@example.com",
+      "telepon": "082345678901"
+    }
+  },
+  {
+    "nama": "Citra Dewi",
+    "nim": "11223344",
+    "jurusan": "Sistem Informasi",
+    "semester": 4,
+    "ipk": 3.9,
+    "kontak": {
+      "email": "citra.dewi@example.com",
+      "telepon": "083456789012"
+    }
+  },
+  {
+    "nama": "Dimas Pratama",
+    "nim": "44332211",
+    "jurusan": "Teknik Sipil",
+    "semester": 6,
+    "ipk": 3.2,
+    "kontak": {
+      "email": "dimas.pratama@example.com",
+      "telepon": "084567890123"
+    }
+  },
+  {
+    "nama": "Eka Putri",
+    "nim": "55667788",
+    "jurusan": "Arsitektur",
+    "semester": 2,
+    "ipk": 3.8,
+    "kontak": {
+      "email": "eka.putri@example.com",
+      "telepon": "085678901234"
+    }
+  }
+]
