@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/formValidation.css">
+</head>
+<body>
+  <!-- attribute in html5
+  1. autocomplete
+  2. autofocus
+  3. required
+  4. minlength & maxlength
+  5. min & max
+  6. step
+  7. pattern -->
+
+  <form action="" method="post" autocomplete="off"> <!-- novalidate -->
+    <div>
+      <label for="username">Username</label>
+      <input type="text"
+             name="username"
+             id="username"
+             autofocus
+             required
+             minlength="5"
+             maxlength="10"
+             oninvalid="this.setCustomValidity('Username minimal 5 karakter')"
+             oninput="this.setCustomValidity('')"
+             >
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email"
+             name="email"
+             id="email"
+             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+             >
+    </div>
+    <div>
+      <label for="telephone">Telephone</label>
+      <input type="tel" name="telephone" id="telephone">
+    </div>
+    <div>
+      <label for="url">Url</label>
+      <input type="url" name="url" id="url">
+    </div>
+    <div>
+      <label for="number">Number</label>
+      <input type="number"
+             name="number"
+             id="number"
+             min="0"
+             max="100"
+             step="5"
+             >
+    </div>
+    <div>
+      <label for="slider">Slider Range</label>
+      <span class="start">0</span>
+      <input type="range"
+             name="slider"
+             id="slider"
+             min="0"
+             max="100"
+             step="5"
+             >
+      <span class="end">100</span>
+    </div>
+    <div>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date">
+      <label for="month">Month</label>
+      <input type="month" name="month" id="month">
+      <label for="week">Week</label>
+      <input type="week" name="week" id="week">
+      <label for="time">Time</label>
+      <input type="time" name="time" id="time">
+    </div>
+    <div>
+      <label for="color">Color</label>
+      <input type="color"
+             name="color"
+             id="color">
+      <span class="hexa"></span>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script src="js/formValidation.js"></script>
+</body>
+</html>

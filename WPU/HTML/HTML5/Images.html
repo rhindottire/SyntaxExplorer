@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- png, jpg,jpeg, gif, svg, webp, avif -->
+  <!-- don't use hotlinking (linking to an image on another site) -->
+  <img src="images/contoh.jpg"
+       alt="contoh"
+       title="contoh"
+       srcset="images/small.jpg 1x,
+               images/medium.jpg 2x,
+               images/large.jpg 3x"
+       sizes="(max-width: 600px) 50vw,"
+       loading="lazy">
+  <figure>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+
+  <picture>
+    <source media="(min-width: 650px)" srcset="images/contoh.jpg" sizes="50vw">
+    <source media="(min-width: 465px)" srcset="images/contoh.jpg">
+    <img src="images/contoh.jpg" alt="contoh">
+  </picture>
+</body>
+</html>
