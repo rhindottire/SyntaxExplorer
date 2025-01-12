@@ -1,0 +1,22 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+}
+
+.item {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: pink;
+}

@@ -124,8 +124,8 @@ body {
 .thumbnail.kazuha img,
 .thumbnail.west img,
 .thumbnail.xiao img {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
 }
 
 /* Responsive */

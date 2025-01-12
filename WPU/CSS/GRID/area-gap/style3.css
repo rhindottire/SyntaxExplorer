@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-column-gap: 10px; */
+  /* grid-row-gap: 10px; */
+  /* column-gap: 10px;
+  row-gap: 10px; */
+  gap: 10px;
+}
+
+.item {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.item:nth-child(even) {
+  background-color: pink;
+}

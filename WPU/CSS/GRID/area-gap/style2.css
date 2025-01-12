@@ -1,0 +1,35 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  /* grid-template-rows:
+    [baris1-mulai] 50px
+    [baris1-akhir baris2-mulai] 100px
+    [baris2-akhir];
+  grid-template-areas:
+    "header header header"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 3fr; */
+  grid-template:
+    [baris1-mulai] 'header header header' 50px
+    [baris1-akhir baris2-mulai] 'footer footer footer' 100px
+    [baris2-akhir] /
+    1fr 2fr 3fr;
+}
+
+.item {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.item:nth-child(even) {
+  background-color: pink;
+}

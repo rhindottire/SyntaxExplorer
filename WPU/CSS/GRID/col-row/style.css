@@ -1,0 +1,24 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  /* explicit and implicit grid */
+  grid-template-columns: 100px 25% 200px; /* gtc */
+  grid-template-rows: 100px; /* gtr */
+}
+
+.item {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: pink;
+}

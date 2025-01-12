@@ -1,0 +1,24 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(9, 1fr); */
+  grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr);
+}
+
+.item {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: pink;
+}
