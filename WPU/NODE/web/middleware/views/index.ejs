@@ -1,0 +1,13 @@
+<h1>Hello <%= name %></h1>
+<hr>
+<h4>List Student</h4>
+<% if (students.length === 0) { %>
+  <p>No student found</p>
+<% } %>
+<% students.forEach((student) => { %>
+  <ul>
+    <li><%= student.name %></li>
+    <li><%= student.email ? student.email : "---" %></li>
+    <li><%= student.phone %></li>
+  </ul>
+<% }); %>
