@@ -1,0 +1,3 @@
+[submodule "react-tsx"]
+	path = react-tsx
+	url = https://github.com/rhindottire/react-tsx
